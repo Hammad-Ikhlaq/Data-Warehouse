@@ -1,0 +1,11 @@
+EmployeeID	AddressID	AddressLine1	AddressLine2	City	StateProvinceID	PostalCode
+1	215	101 Candy Rd.		Redmond	79	98052
+2	33	10203 Acorn Avenue		Calgary	1	11111
+3	147	1061 Buskrik Avenue		Edmonds	79	98020
+4	110	1064 Slow Creek Road		Seattle	79	98104
+5	32508	108 Lakeside Court		Calgary	79	98004
+6	113	1102 Ravenwood		Seattle	79	98104
+7	267	1144 Paradise Ct.		Issaquah	79	98027
+8	233	1185 Dallas Drive		Calgary	79	98201
+9	95	1220 Bradford Way		Seattle	79	98104
+10	5	1226 Shoe St.		Bothell	79	98011

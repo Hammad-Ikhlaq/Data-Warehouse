@@ -1,0 +1,4 @@
+DepartmentID	Name	GroupName
+1	FM	Lhr
+2	SM	KL
+3	Other	Calgary

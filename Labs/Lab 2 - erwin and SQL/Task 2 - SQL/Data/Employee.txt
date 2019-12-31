@@ -1,0 +1,11 @@
+EmployeeID	Name	NationalIDNumber	ContactID	ManagerID	Title	BirthDate	MaritalStatus	Gender
+1	sylvia	14417807	1209	16	Production Technician - WC60	1972-05-15 00:00:00	M	M
+2	CK	253022876	1030	6	Marketing Assistant	1977-06-03 00:00:00	S	M
+3	CTan	509647174	1002	12	Engineering Manager	1964-12-13 00:00:00	M	M
+4	liew	112457891	1290	3	Senior Tool Designer	1965-01-23 00:00:00	S	M
+5	John	480168528	1009	263	Tool Designer	1949-08-29 00:00:00	M	M
+6	Johanthan	24756624	1028	109	Marketing Manager	1965-04-19 00:00:00	S	M
+7	Shahroom	309738752	1070	21	Production Supervisor - WC60	1946-02-16 00:00:00	S	F
+8	Elizbeth	690627818	1071	185	Production Technician - WC10	1946-07-06 00:00:00	M	F
+9	Lia	695256908	1005	3	Design Engineer	1942-10-29 00:00:00	M	F
+10	Micheal	912265825	1076	185	Production Technician - WC10	1946-04-27 00:00:00	S	M

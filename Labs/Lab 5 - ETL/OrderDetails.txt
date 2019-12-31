@@ -1,0 +1,9 @@
+OrderId	LineId	ItemName	Quantity	Amount
+1	1	Dairy Milk	10	200
+1	2	Eggs	12	100
+2	1	Olpers milk	2	240
+3	1	Bread	1	70
+3	2	Super biscuit	10	150
+3	3	Dalda cooking oil	1	1050
+4	1	Lays	2	80
+4	2	Maggi noodles	5	100

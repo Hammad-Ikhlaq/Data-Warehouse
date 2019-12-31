@@ -1,0 +1,7 @@
+
+from google.colab import files
+uploaded = files.upload()
+
+!unzip winemag-data-130k-v2.zip
+data = pd.read_csv('winemag-data-130k-v2.csv')
+

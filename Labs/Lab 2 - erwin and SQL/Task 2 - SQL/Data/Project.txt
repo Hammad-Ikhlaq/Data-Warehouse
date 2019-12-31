@@ -1,0 +1,4 @@
+ProjectID	Name	StartDate	EndDate	Description	DeptID
+1	Russell	2005-01-01 00:00:00	2008-01-01 00:00:00	Stock market	2
+2	FE	2006-01-01 00:00:00	2007-01-01 00:00:00	Financial market	1
+3	TK	2009-01-01 00:00:00	2007-01-01 00:00:00	Stock Market	1
