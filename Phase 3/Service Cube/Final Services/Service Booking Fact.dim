@@ -1,0 +1,249 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="385ce9cc-436e-4137-bfd5-e8e76b400e93" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Service Booking Fact</ID>
+  <Name>Service Booking Fact</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="57ce4c90-e883-4374-b7fb-f970626e6e56">
+    <DataSourceViewID>Final Service</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="80d97cac-a412-46db-ad78-57bb2f0eb314">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="241cad22-7261-4a1e-ac84-f4c810833dd9">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c18f1418-df74-444f-b5b3-e5ac325c6714">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="096a2646-8473-4f93-90aa-c6462cea09e7">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ee31105a-7569-4471-ad9b-acff4e123f6c">
+          <AttributeID>Defect Id</AttributeID>
+          <Name>Defect Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="14d21707-5fc2-446c-98f1-3e57f90292ff">
+          <AttributeID>Customer ID</AttributeID>
+          <Name>Customer ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="50dcef76-c16f-443d-b79d-65ae520d52fa">
+          <AttributeID>Part Id</AttributeID>
+          <Name>Part Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="78c77e69-3c46-490b-939e-8834b73dc037">
+          <AttributeID>Day Id</AttributeID>
+          <Name>Day Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="79c8cfe7-1037-4ac1-9a44-02fabfc2b687">
+          <AttributeID>Manufacture Code</AttributeID>
+          <Name>Manufacture Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a71e6d34-429a-450a-9068-641d7ac9330b">
+          <AttributeID>Model Code</AttributeID>
+          <Name>Model Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f17af922-372f-41de-aac9-48d5afee0248">
+          <AttributeID>Year Id</AttributeID>
+          <Name>Year Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="364e416d-03bd-455e-9ef3-d8d5f303f99a">
+          <AttributeID>Month Id</AttributeID>
+          <Name>Month Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="829ca589-2524-4429-9a78-35dab66468fd">
+      <ID>Defect Id</ID>
+      <Name>Defect Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29acfd62-4f6a-41c4-9a9b-224523e43c89">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="087b74a8-b5c8-416f-84eb-2a6df0f9d066">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Defect_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="18b96993-c6f2-47b6-acfa-2e58484da26f">
+      <ID>Customer ID</ID>
+      <Name>Customer ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d438dda0-7679-4b3a-b2b5-a005ce1d8f17">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="27ba9959-71bb-48f7-9a00-a904fa0c3ea2">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Customer_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d8f4bddb-d024-42cd-85b9-a3a6098c1aa6">
+      <ID>Part Id</ID>
+      <Name>Part Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95c2db56-b091-4974-a90f-727d8c6e8b63">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="113c2cd0-c0c7-4493-a9cb-10da661d5f7e">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Part_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d633ea15-7017-49c1-8f38-1c62cedcdba8">
+      <ID>Day Id</ID>
+      <Name>Day Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cdd08bc-4068-4f05-83af-4ad58bebedad">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca7356a0-61bf-46ca-9b35-9071f006c151">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Day_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a81f0923-0b92-49f8-9ede-9c19165609d8">
+      <ID>Manufacture Code</ID>
+      <Name>Manufacture Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e19eea7-c9a2-40e3-b0ac-4ce808079a85">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cde292e0-ac4c-4b3d-b723-6915a6876797">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Manufacture_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="961eaf7f-778b-4841-8e2e-6fb7a0616def">
+      <ID>Model Code</ID>
+      <Name>Model Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e2cae66e-5b45-46cb-9b0e-f6ff56ea6c89">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c98e5881-d26d-402c-9be6-ce0f92c2e86a">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Model_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="95ec7fbe-f72f-4f30-bdee-0081bb192a68">
+      <ID>Year Id</ID>
+      <Name>Year Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64f44f9e-968f-489e-9147-47a4b0e4928a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd0d5018-4675-488d-ac3e-5b36eaaa9fed">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Year_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61d242f1-4139-45af-8f8a-10c387418114">
+      <ID>Month Id</ID>
+      <Name>Month Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9e16927-21d1-4a08-943c-52318a9c3c9a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e12d2b39-fcfc-46a1-b339-4fc3a2379045">
+            <TableID>dbo_ServiceBookingFact</TableID>
+            <ColumnID>Month_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

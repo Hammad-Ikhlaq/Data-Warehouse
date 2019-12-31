@@ -1,0 +1,833 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e26453fc-73f1-4dab-97af-0449c565fbfb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Final Service</ID>
+  <Name>Final Service</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="c2a00e77-aa96-4ad2-9a63-08cd7eecbea7">
+      <ID>Service Booking Fact</ID>
+      <Name>Service Booking Fact</Name>
+      <DimensionID>Service Booking Fact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d6a876db-d4cf-4522-b54d-97db61dadb5d">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="037ac75a-f471-4a27-9036-55f9f5b2fcf1">
+          <AttributeID>Defect Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f7a3b26b-2a41-43a0-ae5c-2b2475107615">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9633b7a4-67d9-4f7b-a447-25ab726fc825">
+          <AttributeID>Part Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="990c4bd3-20c5-4deb-b298-e8743ea18209">
+          <AttributeID>Day Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a4f5a7d-e72e-4a0f-a516-c28fa1045aa1">
+          <AttributeID>Manufacture Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="adc5d644-cc2d-4ffe-8c43-3b1696e261c9">
+          <AttributeID>Model Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7499498d-2be2-4c49-a1ce-d7c94703c985">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae460f2a-f7bd-4114-837a-cf6cafba997c">
+          <AttributeID>Month Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9644b3d9-7b3c-4593-836e-796860115e9e">
+      <ID>Defect</ID>
+      <Name>Defect</Name>
+      <DimensionID>Defect</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6f40b7df-afbd-43fd-936a-ecf854ee7360">
+          <AttributeID>Defect Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="27c7484f-fd06-45bd-8b90-d79267210cac">
+      <ID>Customer</ID>
+      <Name>Customer</Name>
+      <DimensionID>Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b2307030-96a2-43c8-a6a8-deb45dc352aa">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a9aadbce-efcb-43b7-b64c-2fe07a1d66b9">
+      <ID>Part</ID>
+      <Name>Part</Name>
+      <DimensionID>Part</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1b6a50d1-8345-4e25-a717-f2874f9cbd56">
+          <AttributeID>Part Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="39c26169-e817-48db-8bb3-ed16e65f7143">
+      <ID>Day Dim</ID>
+      <Name>Day Dim</Name>
+      <DimensionID>Day Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d720537f-be03-45e0-9d4d-2c10de735a6d">
+          <AttributeID>Day Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1d346855-2625-4c01-9485-094498cc910e">
+          <AttributeID>Month Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fc0a9032-52cd-49a7-b6aa-0b54d2448427">
+      <ID>Manufacture</ID>
+      <Name>Manufacture</Name>
+      <DimensionID>Manufacture</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cef04463-daaf-4eaf-9dc1-701abe17ccc1">
+          <AttributeID>Manufacture Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="46135938-3b7c-4e2d-885c-92dccdddcdc7">
+      <ID>Model</ID>
+      <Name>Model</Name>
+      <DimensionID>Model</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ac6dc56c-b333-4a37-8f8e-5066acdda722">
+          <AttributeID>Model Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="25377167-b444-414f-b69b-052e83bce57b">
+      <ID>Year Dim</ID>
+      <Name>Year Dim</Name>
+      <DimensionID>Year Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1abd7551-061e-4ba0-8cb9-4c4ac6b125e9">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="dcdea297-6339-44b9-9ac7-67062177b5b8">
+      <ID>Month Dim</ID>
+      <Name>Month Dim</Name>
+      <DimensionID>Month Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5d9af309-9324-40e6-a37c-69971c0dc186">
+          <AttributeID>Month Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1021b77e-7373-46b1-a286-83975ff48fe4">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3d6372fa-9f3d-42b0-8758-bb5deb5e1c2b">
+      <ID>Service Booking Month Fact</ID>
+      <Name>Service Booking Month Fact</Name>
+      <DimensionID>Service Booking Month Fact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8b551755-ee58-422f-a9ba-164f01f7c368">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="07f6861c-a01d-4b72-9acd-c7eb3da05b57">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="572a0dd3-cded-45a6-ad3f-2bd0c71b3959">
+          <AttributeID>Month Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a413597f-600c-4da2-b566-a65658533523">
+          <AttributeID>Defect Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ff0150c6-56b6-4c72-b274-78bcc279ad34">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6196602d-9e43-4511-a436-45d506ccada9">
+          <AttributeID>Part Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d3ec4f7-81b6-4a90-bbe6-b35f1a2a3366">
+          <AttributeID>Model Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6b0cad51-6417-485e-bd79-87c4f6f9dd37">
+          <AttributeID>Manufacture Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="470d32e8-0cc8-40ce-925f-cb4c6100775e">
+      <ID>Year</ID>
+      <Name>Year</Name>
+      <DimensionID>Year Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="95640dfe-a792-43d8-9421-5624a7a88213">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9f842361-118a-458b-92f9-459f90ce80e5">
+      <ID>Service Booking Year Fact</ID>
+      <Name>Service Booking Year Fact</Name>
+      <DimensionID>Service Booking Year Fact</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f7da6615-1541-40f0-aa86-0ee73de0e36f">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bf7c8ab9-eb7c-49b2-8765-d95b8d5a39e6">
+      <ID>Day Dim - Month</ID>
+      <Name>Day Dim - Month</Name>
+      <DimensionID>Month Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fcf0c1d7-0c4d-4c8c-bbd9-7e61084c10a4">
+          <AttributeID>Month Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e85251f-cf9c-404d-a1f9-7f24e983c6ba">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d5fbdf38-c569-4858-9dac-68bf20d0b540">
+      <ID>Day Dim - Month - Year</ID>
+      <Name>Day Dim - Month - Year</Name>
+      <DimensionID>Year Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="403f3fbe-4c09-4102-9082-9f33bd6ecda1">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="79bf53f6-0ad2-4969-9316-5ab2366821da">
+      <ID>Month Dim - Year</ID>
+      <Name>Month Dim - Year</Name>
+      <DimensionID>Year Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="67bce58d-303d-4c0d-a5d2-e339d88376f0">
+          <AttributeID>Year Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="db9f6c2d-749b-48d5-92d8-2e840c2e991d">
+      <ID>Service Booking Fact</ID>
+      <Name>Service Booking Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ba2ba8a1-99e6-4331-a15f-e272d0abc01f">
+          <ID>Current Milage</ID>
+          <Name>Current Milage</Name>
+          <Source dwd:design-time-name="da409647-9570-426e-8073-b2a790b980a1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3e7700e4-5781-457b-8fee-41d2359d634d">
+              <TableID>dbo_ServiceBookingFact</TableID>
+              <ColumnID>Current_Milage</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1f282ac2-720f-4df3-b7b2-55b2d1219a8d">
+          <ID>Engine Size</ID>
+          <Name>Engine Size</Name>
+          <Source dwd:design-time-name="ebd80796-2cde-48ff-bd20-2b0af2616f12">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="595b867f-e4e2-4d41-a5f1-c1b3949804ed">
+              <TableID>dbo_ServiceBookingFact</TableID>
+              <ColumnID>Engine_Size</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b6ca2c61-47e3-4912-8bd2-2c2642004945">
+          <ID>Number In Stock</ID>
+          <Name>Number In Stock</Name>
+          <Source dwd:design-time-name="a969011d-918d-4b6f-8a1f-790032e2e62e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="509999a1-e6f0-4a3a-a364-baab35e7784e">
+              <TableID>dbo_ServiceBookingFact</TableID>
+              <ColumnID>Number_in_Stock</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fbd18312-6e47-4708-890b-cdf4a0880e92">
+          <ID>Service Booking Fact Count</ID>
+          <Name>Service Booking Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f5f04c2d-d2f9-410d-a4e4-3acad73f6124">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b6c7d2f5-5905-4976-8c7a-14d9e4a69bdb">
+              <TableID>dbo_ServiceBookingFact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="ef7b63d8-ad7f-406f-9ce7-f1c51a36aeee">
+          <CubeDimensionID>Service Booking Fact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c2f62fcf-099a-4492-865e-33e8e24076f9">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="61dc2e4c-c4f3-4301-82d2-faea048c7f8b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e109604-c827-42b9-96d8-fde6f5e5388e">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5483b6f1-7eb0-4388-ad5b-8c5b34e11a44">
+          <CubeDimensionID>Defect</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0cdb01cd-eb34-4cf3-ac0a-832c10668e01">
+              <AttributeID>Defect Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f53ce041-b84b-4b3c-bf9d-43d489d08bc3">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="53d2c268-26ce-46b0-a0ad-470f1a92793d">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Defect_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9a8573f2-531f-4267-8057-61ad23c9c40e">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1add1ebc-a5ae-46dd-97e2-3576f0328ddf">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="326101ea-a614-4892-a5dd-957f352bb91b">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec2e4281-852f-47ec-96a7-aa1d4744f18e">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Customer_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8e852915-81b8-43aa-9d8d-aaec8ddfc873">
+          <CubeDimensionID>Part</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5b0c8e89-3d5f-4cf7-a5c6-9d82b44d8a4b">
+              <AttributeID>Part Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d7f9ccba-5b19-42f4-9adc-93f262e04828">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a9edc202-9477-4618-a9f4-655dc68fcc7e">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Part_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3730e3d5-ed3f-4aed-99e6-c7a17e84bf20">
+          <CubeDimensionID>Day Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="72c90b85-ba3b-417c-9b8b-25c51edd4c97">
+              <AttributeID>Day Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5545d38a-c8ef-418b-aa2b-970234e33f35">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b79ecbd-d698-49d1-94d8-39909021ec5a">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Day_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1360b373-c132-41e4-81ce-6902f5a065bf">
+          <CubeDimensionID>Manufacture</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="85842b37-de17-4162-a33e-277bf1ded166">
+              <AttributeID>Manufacture Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="434379ae-b286-40cf-9e66-02cdd738eee6">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8e9628b8-3c93-4212-bd66-feea6354578b">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Manufacture_Code</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="36512962-1458-4b93-8009-70b128b42771">
+          <CubeDimensionID>Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b814eafe-18f4-4523-b727-f4773d159ca4">
+              <AttributeID>Model Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="24da8116-9141-42a4-ab1f-848ff747c925">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ee38ac10-9b16-4af3-b228-2ddb10061138">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Model_Code</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d1e60268-d7ce-4200-b2de-283ca9550607">
+          <CubeDimensionID>Year Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7f2d1171-d1da-4111-80b3-daa5dd420caa">
+              <AttributeID>Year Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a38c2e1d-d2d6-4d7e-ab7b-0d0419566003">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e43e96a1-1c68-420a-810c-f635bc048dfe">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Year_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="842feddf-bc6c-458d-97df-90310ef0bb7e">
+          <CubeDimensionID>Month Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fc5179ba-dada-48c8-9048-8392f6fb48c7">
+              <AttributeID>Month Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="70d822b9-9caf-4138-a5f5-fdc1d15ed575">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4fb9ce87-6190-4250-9083-cc31ad12b381">
+                    <TableID>dbo_ServiceBookingFact</TableID>
+                    <ColumnID>Month_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a90766d7-f53a-4943-a89c-d8e9f33cd261">
+          <CubeDimensionID>Day Dim - Month</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="73501d10-b67d-4e22-8e3f-abb76ac72cd3">
+              <AttributeID>Month Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Day Dim</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Month Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="670befa2-0396-4b56-97a7-6fcf01571e63">
+          <CubeDimensionID>Day Dim - Month - Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c537b0a3-2ea9-4ef3-a79e-398ea5993591">
+              <AttributeID>Year Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Day Dim - Month</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Year Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="eeaf66ad-3361-40b5-848b-a06b846f3610">
+          <CubeDimensionID>Month Dim - Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2abae244-f6be-44b9-ba48-259b2cbfbb23">
+              <AttributeID>Year Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Month Dim</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Year Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="32e4f3a7-4523-411c-a6ed-dff5d4870b64">
+      <ID>Service Booking Month Fact</ID>
+      <Name>Service Booking Month Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b4a80e85-bdf7-4de6-8452-cbf7d9c22c8c">
+          <ID>Current Milage - Service Booking Month Fact</ID>
+          <Name>Current Milage - Service Booking Month Fact</Name>
+          <Source dwd:design-time-name="d2b36f3f-eeb2-4c4a-8904-399f5545ab24">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ef2da353-4aea-41c3-ab77-65fe0965f8d3">
+              <TableID>dbo_ServiceBookingMonthFact</TableID>
+              <ColumnID>Current_Milage</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="06162c84-09f1-4bc9-980f-569366ee65f9">
+          <ID>Engine Size - Service Booking Month Fact</ID>
+          <Name>Engine Size - Service Booking Month Fact</Name>
+          <Source dwd:design-time-name="1775adff-528d-43e4-a651-41d87d02daf2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bab31d09-8873-4d59-a802-a26f904d19a2">
+              <TableID>dbo_ServiceBookingMonthFact</TableID>
+              <ColumnID>Engine_Size</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7d688102-d893-49fd-85f7-46070ac1e5cc">
+          <ID>Number In Stock - Service Booking Month Fact</ID>
+          <Name>Number In Stock - Service Booking Month Fact</Name>
+          <Source dwd:design-time-name="78e8158f-9379-4f10-ac46-42071cddafe2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5bf44656-cd1f-41fc-9f85-a9b8fab65273">
+              <TableID>dbo_ServiceBookingMonthFact</TableID>
+              <ColumnID>Number_in_Stock</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fc2ec1a9-389f-4b7f-8a44-79432aef2d6b">
+          <ID>Service Booking Month Fact Count</ID>
+          <Name>Service Booking Month Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a258e71f-5992-4ee1-b613-b32d42d71a53">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="08c675c2-6ca7-4880-b5c2-7a4b64268381">
+              <TableID>dbo_ServiceBookingMonthFact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="761c7092-d617-479f-a72f-eafbcea9506a">
+          <CubeDimensionID>Service Booking Month Fact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6a1a0a9c-4ce7-4324-9170-ca68fa70bfee">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5949ff5d-2e26-4a22-9a8f-0cea0a2fcce2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="68f9d727-61bc-4cf7-bd22-74b6e410882b">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6409411d-ddfd-43ba-96eb-691d09e003c5">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a86b7b99-8a92-43d3-94c8-00504eb27314">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="373a1265-31bc-4362-8f4d-7c35719777fc">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d95a63c7-c3b2-4c2d-863c-a635d30b2179">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Customer_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c4eac124-2d17-4cc9-aa0a-f240e2a93d36">
+          <CubeDimensionID>Month Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="79c3dcd5-1389-47a3-ad2f-00b844ae3212">
+              <AttributeID>Month Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9b62fbfa-818f-4aa5-ab38-714247e3cfb8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="355eb545-4f07-4b4f-a2ed-f4eb9e16db76">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Month_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0e320382-7508-48d5-822c-2124ddc33554">
+          <CubeDimensionID>Defect</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1ee32cc9-d72a-4a60-9a24-a8d440a01dae">
+              <AttributeID>Defect Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3246ebe8-06f9-4a0b-bc76-ebb2f571e99b">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6df08426-a38a-4ca9-9d82-e87a9b086cdd">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Defect_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bb5d2c52-1fbb-4065-90a9-d296b286670e">
+          <CubeDimensionID>Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8736e2a9-f5b6-4a32-9c39-75952be50131">
+              <AttributeID>Year Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f30d6e56-0bb5-49a2-90b6-c686e2eea1e2">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a32f3e3d-911b-453b-858e-e1e442772e19">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0fc89332-a502-4a15-bbe6-c6d691553816">
+          <CubeDimensionID>Part</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0796d420-642b-4362-951d-80c24ed19bdf">
+              <AttributeID>Part Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e0c193ef-1242-4bdf-8a3a-2be3c1e3a7ad">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f7ba5398-4c24-49b2-9b8e-220e077b31f7">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Part_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="11400c7c-5e68-46fc-a77c-b43bbc123bf1">
+          <CubeDimensionID>Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ab0e84b8-22b2-4a02-a099-227125e764f7">
+              <AttributeID>Model Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c341865d-3836-4f09-ba9f-f2889db5e3fe">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f36775f5-d7c7-4ec8-aab2-0462ea00bc72">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Model_Code</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3982e151-3cac-4229-8950-23fd72366df1">
+          <CubeDimensionID>Manufacture</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4905daa8-b97c-4b97-a86d-2beb07bb8c69">
+              <AttributeID>Manufacture Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2995e17d-b70b-4444-bff0-3b1d1a1cef04">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2fdad4bf-0a80-40b9-bc88-30b7245af744">
+                    <TableID>dbo_ServiceBookingMonthFact</TableID>
+                    <ColumnID>Manufacture_Code</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8603e732-c6c4-4d41-b692-0039199158b1">
+          <CubeDimensionID>Month Dim - Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5cea43a2-7465-470f-ad79-23de778eed0f">
+              <AttributeID>Year Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Month Dim</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Year Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="033d233a-ebc3-4a07-ad00-faa81dfc77d5">
+      <ID>Service Booking Year Fact</ID>
+      <Name>Service Booking Year Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c20d3527-3619-4b1e-9c00-77e7bf54a132">
+          <ID>Current Milage - Service Booking Year Fact</ID>
+          <Name>Current Milage - Service Booking Year Fact</Name>
+          <Source dwd:design-time-name="04abc0e5-c6d6-4d9e-a0b5-b6dbf00646ed">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="76d226f1-3dc0-4a7f-b738-967474474123">
+              <TableID>dbo_ServiceBookingYearFact</TableID>
+              <ColumnID>Current_Milage</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a98ce248-1e8e-4485-ab69-2fd4de62c717">
+          <ID>Engine Size - Service Booking Year Fact</ID>
+          <Name>Engine Size - Service Booking Year Fact</Name>
+          <Source dwd:design-time-name="85226f6a-dcb5-4281-89fa-a6df94b21f30">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="58b3921c-69d6-4285-905a-41dbc5f02d5e">
+              <TableID>dbo_ServiceBookingYearFact</TableID>
+              <ColumnID>Engine_Size</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="75568a03-8599-4ee0-8ae4-eacc27699aa5">
+          <ID>Number In Stock - Service Booking Year Fact</ID>
+          <Name>Number In Stock - Service Booking Year Fact</Name>
+          <Source dwd:design-time-name="2ee17e6d-991b-4422-9c60-4f43243207cc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b8118966-5ece-4b4e-93ec-d4a70a8cf2f6">
+              <TableID>dbo_ServiceBookingYearFact</TableID>
+              <ColumnID>Number_in_Stock</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="05d20178-f62c-4bba-a412-37a2140f9615">
+          <ID>Service Booking Year Fact Count</ID>
+          <Name>Service Booking Year Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="29b354ab-f5ab-405b-947c-f1fd914ce3bb">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a85bce44-6643-4f13-9ee3-97fb445424f6">
+              <TableID>dbo_ServiceBookingYearFact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="b1678e0d-a5ec-4997-8666-db912c08d87a">
+          <CubeDimensionID>Service Booking Year Fact</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="72e03129-769c-4989-81a8-a2f44987bd83">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5461cc16-35fa-4154-acb8-d4a7a51a2ce7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cc3166fd-f0ce-46ce-a3cb-d5a0f56db15b">
+                    <TableID>dbo_ServiceBookingYearFact</TableID>
+                    <ColumnID>Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="596c5171-26dc-4bf9-a44b-56a53ad64353">
+    <DataSourceViewID>Final Service</DataSourceViewID>
+  </Source>
+</Cube>

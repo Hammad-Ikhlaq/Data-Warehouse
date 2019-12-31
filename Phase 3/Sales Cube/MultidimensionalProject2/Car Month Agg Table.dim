@@ -1,0 +1,208 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ad7521da-6775-422c-8ff1-e67927ddcae6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Car Month Agg Table</ID>
+  <Name>Car Month Agg Table</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d87b5515-02fd-40a4-a2dd-dc4ede675188">
+    <DataSourceViewID>Final Sales</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="dd870714-76e8-49c5-9146-a7dd3632015c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9ef924d7-ca5e-458e-bd7a-3615a0e215a3">
+      <ID>Car For Sale Id</ID>
+      <Name>Car For Sale Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17d3458a-6eb2-4fff-abc7-ac785cc2cd70">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c827751-79f3-4246-994d-81f1b057a26b">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>Car_For_Sale_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="95b5146e-8e09-43ba-ae2c-c87cee636c38">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fccc43b1-67d9-486a-8ffc-a0741869a463">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>Car_Feature_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a1771b51-bc5f-4ae0-a582-3ccd119b7b9b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce3cbbc2-1b02-44f2-94e0-f3ec961030e3">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>Modelcode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="29046649-be4a-46bf-bbda-aa2b6ec01201">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bb5e938b-acec-459b-ba66-87341d9100a5">
+          <TableID>dbo_CarMonthAggTable</TableID>
+          <ColumnID>Car_For_Sale_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a1a3cb2a-84e1-48e8-8ae6-7b4596199c4f">
+          <AttributeID>Year</AttributeID>
+          <Name>Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27a37186-aa25-4ada-819b-77a86ddd2582">
+          <AttributeID>Manufacture Code</AttributeID>
+          <Name>Manufacture Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ddd29999-3c3e-49e8-8ea0-86b0964b8cdc">
+          <AttributeID>Modelcode</AttributeID>
+          <Name>Modelcode</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5faae19e-d0ea-4993-9f09-975cdef15058">
+          <AttributeID>Month</AttributeID>
+          <Name>Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a7743766-6075-41f7-b19a-6d3a65ca832a">
+          <AttributeID>Car Feature Id</AttributeID>
+          <Name>Car Feature Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5ea76b73-b598-4f17-a894-17b33ae5a1ad">
+      <ID>Year</ID>
+      <Name>Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33c1ea37-33d6-4f71-b859-943c78fee6b5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b64eb70-36e4-4c16-b412-5d220c0b76d8">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3513cb43-52f2-45df-a92a-ac8c2e190dae">
+      <ID>Manufacture Code</ID>
+      <Name>Manufacture Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55a06696-03b0-40ea-9b11-d6ae183b3032">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53bdc0a0-bc0f-4fb6-a475-5c23f21ceac4">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>ManufactureCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8034c17e-1dfe-4d1b-a751-227016b978b4">
+      <ID>Modelcode</ID>
+      <Name>Modelcode</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5938f3f3-cbb8-4c87-a812-8c2fd1e64e2f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e1e5abc-123e-4793-b230-31df0e3b04e5">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>Modelcode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac7ed2ca-1ef3-4d4d-806a-044362be7cf3">
+      <ID>Month</ID>
+      <Name>Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7498d92f-a1c0-4133-b0a9-034649890c87">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f09089ac-49f1-44fb-9f46-2f8c16c150c4">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b3b9625-e73e-42b3-95b4-8de3edbe5ec1">
+      <ID>Car Feature Id</ID>
+      <Name>Car Feature Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70ff28cd-a894-43ac-9c95-46d4bb5ececb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d896c233-989d-40c7-9d72-d3e8b653ed28">
+            <TableID>dbo_CarMonthAggTable</TableID>
+            <ColumnID>Car_Feature_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
